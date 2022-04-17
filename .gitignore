@@ -109,6 +109,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+todo/rest/
 
 # Spyder project settings
 .spyderproject
@@ -127,3 +128,13 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# passwords, secret-keys
+todo/credentials.json
+
+# execute files
+todo/env.ps1
+todo/run.ps1
+
+# migrations
+*migrations/

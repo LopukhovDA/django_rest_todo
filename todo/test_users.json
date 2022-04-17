@@ -1,0 +1,26 @@
+[
+    {
+        "username": "nick",
+        "first_name": "Александр",
+        "last_name": "Никитин",
+        "email": "alexnick@mail.ru",
+        "user_category": "developer",
+        "gender": "M"
+    },
+    {
+        "username": "gavr",
+        "first_name": "Гавриил",
+        "last_name": "Гордеев",
+        "email": "gavr@gmail.com",
+        "user_category": "administrator",
+        "gender": "M"
+    },
+    {
+        "username": "svetka",
+        "first_name": "Светлана",
+        "last_name": "Занеева",
+        "email": "zaneeva.sv@yandex.ru",
+        "user_category": "project manager",
+        "gender": "W"
+    }
+]
