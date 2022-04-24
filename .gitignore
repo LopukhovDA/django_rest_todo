@@ -138,3 +138,6 @@ todo/run.ps1
 
 # migrations
 *migrations/
+
+# node
+*node_modules/
