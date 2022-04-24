@@ -31,3 +31,6 @@ class User(AbstractUser):
         verbose_name='пол', max_length=1, choices=GENDER_CHOICES, blank=True)
     user_category = models.CharField(
         verbose_name='категория пользователя', max_length=30, choices=CATEGORY_CHOICES)
+
+    def __str__(self):
+        return f'{self.first_name} {self.last_name}'
