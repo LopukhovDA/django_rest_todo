@@ -9,7 +9,7 @@ from rest_framework.renderers import JSONRenderer, BrowsableAPIRenderer
 class UserModelViewSet(ModelViewSet):
     queryset = User.objects.all()
     serializer_class = UserModelSerializer
-    permission_classes = [permissions.IsAuthenticated]
+#    permission_classes = [permissions.IsAuthenticated]
 
 
 class UserCustomViewSet(mixins.ListModelMixin, mixins.RetrieveModelMixin,
