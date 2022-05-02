@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'django_filters',
     'rest_framework.authtoken',
+    'drf_yasg',
 
     'usersapp',
     'todoapp',
@@ -160,4 +161,5 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.BasicAuthentication',
         'rest_framework.authentication.TokenAuthentication',
     ],
+    'DEFAULT_VERSIONING_CLASS': 'rest_framework.versioning.NamespaceVersioning',
 }
