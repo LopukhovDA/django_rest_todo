@@ -25,7 +25,7 @@ from rest_framework import permissions
 from graphene_django.views import GraphQLView
 
 router = DefaultRouter()
-# router.register('users', UserModelViewSet)
+router.register('users', UserModelViewSet)
 # router.register('users_custom', UserCustomViewSet)
 router.register('projects', ProjectModelViewSet)
 router.register('notes', ToDoModelViewSet)
@@ -48,8 +48,8 @@ urlpatterns = [
     path('api-auth/', include('rest_framework.urls')),
     path('api/', include(router.urls)),
     path('api-token-auth/', views.obtain_auth_token),
-    path('api/users/0.1', include('usersapp.urls', namespace='0.1')),
-    path('api/users/0.2', include('usersapp.urls', namespace='0.2')),
+    #  path('api/users/0.1', include('usersapp.urls', namespace='0.1')),
+    #  path('api/users/0.2', include('usersapp.urls', namespace='0.2')),
     path('graphql/', GraphQLView.as_view(graphiql=True)),
 
     re_path(r'^swagger(?P<format>\.json|\.yaml)$',
