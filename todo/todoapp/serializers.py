@@ -1,9 +1,10 @@
-from rest_framework.serializers import HyperlinkedModelSerializer, StringRelatedField, ModelSerializer
+from rest_framework.serializers import HyperlinkedModelSerializer, StringRelatedField, ModelSerializer, BooleanField
 from .models import Project, ToDo
+from usersapp.serializers import UserModelSerializer
 
 
-class ProjectModelSerializer(HyperlinkedModelSerializer):
-    users = StringRelatedField(many=True)
+class ProjectModelSerializer(ModelSerializer):
+   # users = StringRelatedField(many=True)
 
     class Meta:
         model = Project

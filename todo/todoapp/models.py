@@ -1,7 +1,5 @@
-from statistics import mode
-from tkinter import CASCADE
-from venv import create
 from django.db import models
+from requests import request
 from usersapp.models import User
 
 

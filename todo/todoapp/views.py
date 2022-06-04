@@ -27,16 +27,16 @@ class ProjectModelViewSet(ModelViewSet):
 
 class ToDoModelViewSet(ModelViewSet):
     queryset = ToDo.objects.all()
-    serializer_class = ToDoModelSerializer
+    serializer_class = ToDoModelSerializerBase
     renderer_classes = [JSONRenderer, BrowsableAPIRenderer]
 #    permission_classes = [permissions.IsAuthenticated]
 #    pagination_class = ToDoLimitOffsetPagination
 #    filterset_fields = ['project']
 
-    def get_serializer_class(self):
-        if self.request.method in ['GET']:
-            return ToDoModelSerializer
-        return ToDoModelSerializerBase
+#    def get_serializer_class(self):
+#        if self.request.method in ['GET']:
+#            return ToDoModelSerializer
+#        return ToDoModelSerializerBase
 
     def perform_destroy(self, instance):
         instance.is_active = False
